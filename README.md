@@ -20,8 +20,17 @@ There's three operating mode:
 
 In addition to the mode of operation, after each "picture" is ready, it can trigger a print.
 
-All pictures will be saved in a directory with a shortcut on the "setup" page when the webapp is started.
+All pictures will be saved in a directory with a shortcut on the "setup" page when the webapp is
+started.
 
 Closing the server
 ------------------
 Once the webapp is loaded, closing the webapp for more than five seconds will kill the server.
+
+Building
+--------
+Full application is built when the project is packaged using `npm pack`.
+It can be built manually with the default Grunt command.
+
+For development, running `npm run dev` will start the server and monitor changes in the source with
+livereload.
