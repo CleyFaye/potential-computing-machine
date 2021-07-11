@@ -5,7 +5,7 @@
     "module": "ESNEXT",
     "lib": ["DOM"],
     "allowJs": false,
-    "jsx": "preserve",
+    "jsx": "react",
     "sourceMap": true,
     "outDir": "./build",
     "rootDir": "./src",

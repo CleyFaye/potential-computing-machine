@@ -6,7 +6,7 @@ const {
   reactAppDynamicTasks,
   getOpts,
   OptType,
-} = require("@cley_faye/boilerplate/grunt");
+} = require("@cley_faye/boilerplate/grunt.js");
 
 const licenseJS = [
   "/*!",

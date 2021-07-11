@@ -7,7 +7,7 @@
     "prepack": "npm run grunt -- clean build",
     "grunt": "npm exec grunt -- --gruntfile Gruntfile.cjs",
     "start": "node bin/www.js",
-    "dev": "npm exec watchers"
+    "dev": "npm run grunt -- clean build && npm exec watchers"
   },
   "files": [
     "build/express/**/*.js",
@@ -22,7 +22,7 @@
   },
   "watchers": {
     "command": [
-      "npm exec tsc -- -w",
+      "npm exec tsc -- -w | sed -u 's/\\x1Bc//g'",
       "npm run grunt -- watch",
       "npm run grunt -- webpack:pocoma_watch",
       "npm exec nodemon bin/www.js"
