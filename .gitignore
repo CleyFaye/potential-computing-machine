@@ -2,4 +2,6 @@
 /.tsbuildinfo
 /.eslintcache
 /*.tgz
+/build
+/dist
 .cache

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2020",
+    "module": "ESNEXT",
+    "lib": ["DOM"],
+    "allowJs": false,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "composite": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+    "removeComments": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
