@@ -10,7 +10,7 @@ export default class Setup extends React.Component {
         Settings
       </div>
       <div className="rightPane">
-        <CameraSetup />
+        <CameraSetup top={5} bottom={10} left={15} right={20} />
       </div>
     </div>;
   }

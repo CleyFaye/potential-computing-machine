@@ -1,0 +1,15 @@
+.cameraSetup {
+  padding: 2px;
+  border: 1px solid black;
+  position: relative;
+
+  video {
+    width: 40vw;
+  }
+
+  .leftCropMargin, .rightCropMargin, .topCropMargin, .bottomCropMargin {
+    position: absolute;
+    background-color: red;
+    opacity: 0.5;
+  }
+}
