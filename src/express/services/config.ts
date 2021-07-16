@@ -1,11 +1,5 @@
+import {CameraCrop, Config} from "../../shared/types.js";
 import {readRuntimeJSON, writeRuntimeJSON} from "./file.js";
-
-export interface CameraCrop {
-  left: number;
-  right: number;
-  top: number;
-  bottom: number;
-}
 
 export const isCameraCrop = (obj: unknown): obj is CameraCrop => {
   const rec = obj as Record<string, unknown>;
@@ -14,10 +8,6 @@ export const isCameraCrop = (obj: unknown): obj is CameraCrop => {
     && ("top" in rec && (typeof rec.top === "number"))
     && ("bottom" in rec && (typeof rec.bottom === "number"));
 };
-
-export interface Config {
-  cameraCrop: CameraCrop;
-}
 
 export const isConfig = (obj: unknown): obj is Config => {
   const rec = obj as Record<string, unknown>;
